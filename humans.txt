@@ -1,0 +1,57 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+	Lead: Charles Haggas
+	Contact: charles [at] spacechimpmedia.com
+	From: 
+
+	Web designer / UI / illustrator: Hamid BaniSaaid
+	Contact: hamid.banisaaid [at] gmail.com
+	From: 
+	
+	HTML, CSS, Javascript coder / SEO Semantics: Mark Newman
+	Contact: markedwardnewman [at] gmail.com
+	From: Austin, Texas, ya'll
+	
+	CMS Integration: 
+	Contact: 
+	From:
+	
+	Content:
+	Contact: 
+	From:
+
+# THANKS
+
+
+# TECHNOLOGY COLOPHON
+	Year created: late 2014 / early 2015
+	Language: English
+	Doctype: W3C Valid HTML5 / CSS3
+	Compatibility: Mobile-first / Responsive
+	Optimization: Optimized for Load Speed 
+	SEO: Semantic Coding
+	Fonts: Raleway, href="http://fonts.googleapis.com/css?family=Raleway:400,700,900"
+	Colors, customized bootstrap enabled:
+    @brand-primary: #8fd7f9; hero-blue
+    @brand-success: #d2e385; light-green
+    @brand-info:    #eff8fd; baby-blue
+    @brand-warning: #e9e1d6; tan
+    @brand-danger:  #e76a70; red
+	Code Libraries used:
+		Bootstrap 3.3.1-
+			Customized CSS, hosted locally
+			JS CDN- https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js
+		JQuery-
+			JS CDN- https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js
+	Tools / IDEs:
+    Adobe's Brackets
+      Autoprefixer (adds browser specific CSS class attributes)
+      LESS autocompile (compiles less files automatically upon save)
+      Unused Files (populates a list of unused files based upon the project's root folder)
+      Whitespace normalizer
+    Notepad++
+    FireFox's Firebug
+    FileZilla
+    Photoshop

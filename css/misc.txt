@@ -1,0 +1,13 @@
+modified:
+
+*     tan: rgba(244, 239, 235, 1) | #e9e1d6;     *-warning
+*     bootstrap default blue: #428bca;           *-primary
+*     light-green: #d2e385;                      *-success
+*     baby-blue: #eff8fd;                        *-info
+*     red: #e76a70; 				 *-danger
+
+@grid-gutter-width 20px (from default 30px;
+
+---
+
+bootstrap default canvas width = 1170, this was made with 1180

@@ -1,0 +1,67 @@
+01/03/2015:
+  External CSS references:
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700,900" />
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+  Internal CSS references:
+    customized bootstrap core, must be used
+      <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css" />
+    main.css by Space Chimp Media: Mark Newman
+      <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+  Fonts used:
+     font-family: 'Raleway', sans-serif; / Raleway(400,700,900) from http://fonts.googleapis.com/css?family=Raleway:400,700,900
+
+  Color references (the asterisk denotes a bootstrap base color variable):
+     tan: rgba(244, 239, 235, 1) | #e9e1d6;     *-warning
+     hero-blue: #8fd7f9;                        *-primary
+     light-green: #d2e385;                      *-success
+     lighter-green: #dde8ac;
+     baby-blue: #eff8fd;                        *-info
+     red: #e76a70;                              *-danger
+
+  ThanksMama template structure:
+  <html>
+
+    <head>
+      <title>Thanks Mama- *</title>
+      head.php
+    </head>
+
+    <body>
+
+      <header>
+        nav-top.php: thanks-mama-phone#, shipping-details, sign-in button, cart button / tan background, wraps
+        nav-main.php: logo, image links / transparent background, collapsible
+      </header>
+
+      <div class="main-content">  NOTE: content is page specific, * denotes multiple files with similar content
+        nav-sub.php: menu-sub, search / light green background, wraps
+        category-cloth-diapers.php
+        content-*.php
+        form-*.php
+        hero-slide-show.php
+        product-*.php
+        subcategory-cloth-diapers.php
+        triptych-home.php
+        --the below .php files are sub-components to the componet .php files but are included in the same components/ directory--
+          aside-reasons-to-buy.php
+          menu-info.php
+          menu-social-small.php
+          nav-sort-quick-links.php
+          popover-baby-child.php
+          popover-cart.php
+      </div>
+
+      <footer>
+        nav-footer.php: menu-products, menu-about-us, footer-highlights, cart button, sign-in button
+        trusted-sources.php
+        site-summary.php: copyright, privacy policy link , terms & conditions link, site map link, social links
+      </footer>
+
+      script-includes.php:
+
+    </body>
+  </html>
+
+  NOTE: There is a carriage return at the end of each .php file

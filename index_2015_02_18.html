@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Thanks Mama- Home</title>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="By mothers, for mothers- our articles, blogs and products have been put together with you in mind. We&#39;re here to help keep your baby safe, happy and healthy!" />
+  <meta name="keywords" content="mama, baby, etc" />
+  <meta name="author" content="Space Chimp Media" />
+  <!-- humans.txt is a suggested way to track relevant information about the site, as well as documenting its authors and contributors. See: http://humanstxt.org/ -->
+  <link rel="author" type="text/plain" href="humans.txt" />
+  <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway:400,700,900" />
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+  <!--customized bootstrap core-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap/css/bootstrap.css" />
+  <!--customized by agency, use for production-->
+  <!-- <link rel="stylesheet" type="text/css" href="css/main.css" /> -->
+  <!--customized by agency, use for development-->
+  <link rel="stylesheet" type="text/css" href="../src/less/main.css" />
+  <!--favicon and apple-touch-icon-->
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  </head>
+<body>
+  <header>
+
+    <!--START nav-top: [thanks-mama-phone# / shipping-details / sign-in & cart buttons]-->
+    <section class="label-warning">
+      <div class="container">
+        <div class="row nav-top">
+
+          <!--START thanks-mama-phone#-->
+          <div class="col-md-3 text-center">
+              <span class="small align-middle">Mama&#39;s Special Touch:
+              <strong class="text-danger"> 1-877-979-6262</strong></span>
+          </div>
+          <!--/thanks-mama-phone#-->
+
+          <!--START shipping-details-->
+          <div class="col-md-5 text-center">
+              <img class="pad-right align-middle hidden-xs" src="img/van.gif"  alt="shipping icon">
+              <span class="align-middle">FREE SHIPPING ON ORDERS OVER $300</span>
+          </div>
+          <!--/shipping-details-->
+
+          <!--START sign-in & cart buttons-->
+          <div class="col-md-2 text-right">
+            <a href="login-register.php" class="btn btn-nav-top btn-warning btn-sign-in btn-group-justified">
+              <span class="small align-middle">
+                <span class="glyphicon glyphicon-user pad-right" aria-hidden="true"></span>
+                Sign In
+              </span>
+            </a>
+          </div>
+          <div class="col-md-2 text-right">
+            <!-- currently, the popover will not show if the cursor is on top of any text inside the button.-->
+            <a href="#" id="cart-popover" class="btn btn-nav-top btn-danger btn-group-justified">
+              <span class="small align-middle">
+                <span class="glyphicon glyphicon-shopping-cart pad-right" aria-hidden="true"></span>
+                My Cart
+                <span class="circle-icon pad-left">
+                  <span id="item-quantity">
+                    10
+                  </span>
+                </span>
+              </span>
+            </a>
+          </div>
+          <!--/sign-in & cart buttons-->
+
+        </div>
+      </div>
+
+      <!--HIDDEN, popover-cart, shown via javascript-->
+      <div class="hide">
+        <div id="cart_popover_content" class="cart-popover">
+          <table class="table table-cart-popover text-left">
+            <tbody>
+              <tr>
+                <td>
+                  <div class="cart-popover-item">
+                    <a href="#"><img src="img/cart-bottles.png" alt="bottles"></a>
+                  </div>
+                </td>
+                <td>
+                  <p>
+                    <a href="#" class="text-danger">Organic Bubble Bath</a>
+                  </p>
+                  <p>
+                    Price: $9.95
+                  </p>
+                  <p>
+                    Quantity: 1
+                  </p>
+                </td>
+                <td>
+                  <!--leave blank-->
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="cart-popover-item pull-left">
+                    <img src="img/cart-diapers-bundle.png" alt="diapers">
+                  </div>
+                </td>
+                <td>
+                  <p>
+                    <a href="#" class="text-danger">Cloth Diaper 12 Pack</a>
+                  </p>
+                  <p>
+                    Price: $215.95
+                  </p>
+                  <p>
+                    Quantity: 1
+                  </p>
+                </td>
+                <td>
+                  <!--leave blank-->
+                </td>
+              </tr>
+              <tr>
+                <td class="top-bottom-border text-right">
+                  2
+                </td>
+                <td class="top-bottom-border">
+                  items in your cart
+                </td>
+                <td class="top-bottom-border">
+                 <a href="#" class="text-danger">edit</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>TOTAL:</strong>
+                </td>
+                <td>
+                  <!--leave blank-->
+                </td>
+                <td>
+                 <strong>$225.90</strong>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="pad-all">
+            <button class="btn btn-danger btn-block">Checkout <i class="caret-right"></i></button>
+          </div>
+        </div>
+      </div>
+      <!--/HIDDEN popover-cart -->
+
+    </section>
+    <!--/nav-top: [thanks-mama-phone# / shipping-details / sign-in & cart buttons]-->
+
+    <!--START nav-main: [logo / menu-main]-->
+    <section class="container">
+      <div class="row">
+        <nav class="navbar navbar-menu-main navbar-default remove-vertical-spacing" role="navigation">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle label-success collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php"><img src="img/logo.png" alt="logo"></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse text-center">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <!-- <a href="baby-child.php" type="button" class="pop-baby-child" role="button" data-toggle="popover"> -->
+                <a href="baby-child.php" class="pop-baby-child" role="button" data-toggle="popover">
+                  <img class="center-block img-responsive" src="img/menu-baby.png" alt="menu-baby">
+                  baby &amp; child
+                </a>
+              </li>
+              <li><a href="mom-home.php"><img class="center-block img-responsive" src="img/menu-mom.png" alt="menu-mom">mom &amp; home</a></li>
+              <li><a href="toys-learning.php"><img class="center-block img-responsive" src="img/menu-toy.png" alt="menu-toy">toys &amp; learning</a></li>
+              <li><a href="bundles-deals.php"><img class="center-block img-responsive" src="img/menu-bundle.png" alt="menu-bundle">bundles &amp; deals</a></li>
+              <li><a href="cloth-diapers.php"><img class="center-block img-responsive" src="img/menu-diaper.png" alt="menu-diaper">cloth diapers</a></li>
+              <li><a href="only-organic.php"><img class="center-block img-responsive" src="img/menu-organic.png" alt="menu-organic">only organic</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </nav>
+      </div>
+
+      <!--HIDDEN: popover-baby-child, shown via javascript- see js/main.js-->
+      <div class="hide">
+        <div id="nav_main_popover_baby_child_content" class="nav-main-popover-baby-child popoverx" >
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Baby Gear</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Strollers</a></li>
+                <li><a href="#">Car Seats</a></li>
+                <li><a href="#">Carriers</a></li>
+                <li><a href="#">Diaper Bag</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Cloth Diapers</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">One Size Diapers</a></li>
+                <li><a href="#">Bundle Package Sets</a></li>
+                <li><a href="#">Pocket Diapers</a></li>
+                <li><a href="#">All In One Diapers</a></li>
+                <li><a href="#">Hybrid Diapers</a></li>
+                <li><a href="#">Newborn Cloth Diapers</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Potty Training</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Training Pants</a></li>
+                <li><a href="#">Overnight Training Pants</a></li>
+                <li><a href="#">Potty Trainers</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Baby Care</h4>
+              <ul class="list-unstyled">
+                <li><a href="#">Skin Care</a></li>
+                <li><a href="#">Oral Care</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/HIDDEN popover-baby-child-->
+
+    </section>
+    <!--/nav-main: [Logo / menu-main]-->
+
+  </header>
+  <div class="main-content">
+
+    <!--START nav-sub: [menu-sub / search]-->
+    <section class="container">
+      <div class="row nav-sub remove-horizontal-spacing label-success">
+        <div class="col-md-2 remove-horizontal-padding">
+            <a href="mamas-blog.php" class="btn btn-success btn-menu-sub btn-group-justified align-middle">
+              mama&#39;s blog
+            </a>
+        </div>
+        <div class="col-md-2 remove-horizontal-padding">
+            <a href="mamas-story.php" class="btn btn-success btn-menu-sub btn-group-justified align-middle">
+              mama&#39;s story
+            </a>
+        </div>
+        <div class="col-md-2 remove-horizontal-padding">
+            <a href="shopping-gift-guides.php" class="btn btn-success btn-menu-sub btn-group-justified align-middle">
+              shopping &amp; gift guides
+            </a>
+        </div>
+        <div class="col-md-3 col-md-offset-3 remove-horizontal-padding">
+          <div class="search input-group" role="search" id="mySearch">
+            <input type="search" class="form-control btn-menu-sub btn-menu-sub-search" placeholder="search entire site"/>
+            <span class="input-group-btn">
+            <button class="btn btn-success btn-menu-sub btn-menu-sub-search" type="button">
+              <span class="glyphicon glyphicon-search text-color-dark"></span>
+              <span class="sr-only">Search</span>
+            </button>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/nav-sub: [menu-sub / search]-->
+
+    <!-- START hero-slide-show / carousel-->
+    <section class="container hidden-sm hidden-xs">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Example headline.</h1>
+              <p><a class="btn btn-lg btn-danger" href="#" role="button">Sign up today</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAGZmZgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Another example headline.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-danger" href="#" role="button">Learn more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="data:image/gif;base64,R0lGODlhAQABAIAAAFVVVQAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-danger" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </section>
+    <!-- /hero-slide-show / carousel -->
+
+    <!--START triptych: [tops-sellers / deal / new]-->
+    <section class="container">
+      <div class="row remove-horizontal-spacing">
+        <div class="col-md-12 remove-horizontal-padding">
+          <div class="row">
+            <div class="col-md-4 pad-top">
+                  <div class="triptych-item">
+                    <img class="img-responsive" src="img/trip-1.jpg" alt="top-sellers">
+                    <h3 class="">TOP SELLERS</h3>
+                    <button type="button" class="btn btn-lg btn-responsive btn-danger">see what's hot</button>
+                  </div>
+            </div>
+            <div class="col-md-4 pad-top">
+                  <div class="triptych-item">
+                    <img class="img-responsive" src="img/trip-2.jpg" alt="deal">
+                    <h3 class="">DEAL OF THE MONTH</h3>
+                    <button type="button" class="btn btn-lg btn-responsive btn-danger">save today</button>
+                  </div>
+            </div>
+            <div class="col-md-4 pad-top">
+                  <div class="triptych-item">
+                    <img class="img-responsive" src="img/trip-3.jpg" alt="new">
+                    <h3 class="text-danger">WHAT'S NEW?</h3>
+                    <button type="button" class="btn btn-lg btn-responsive btn-danger">before it's gone</button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/triptych: [tops-sellers / deal / new]-->
+
+    <!--START content-home-guides -->
+    <section class="container">
+      <div class="row remove-horizontal-spacing pad-no-top margin-bottom">
+        <!--mamas-guides-panel-->
+        <div class="col-md-6 panel-guide-grp pad-bottom margin-top pull-left label-warning">
+          <div class="row content">
+            <div class="col-md-12">
+              <h4>
+                <span class="pull-left">MAMA'S HERE TO HELP</span>
+                <span class="pull-right small"><a href="mamas-guides.php">More guides <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></span>
+              </h4>
+            </div>
+          </div>
+           <div class="row text-center">
+            <!--guide panel 1-->
+            <div class="col-md-6">
+              <img class="img-responsive center-block" src="img/guide-1.jpg" alt="">
+              <small><a href="guides-overview.php">look inside</a> | <a href="#">download</a></small>
+            </div>
+            <!--guide panel 2-->
+            <div class="col-md-6">
+              <img class="img-responsive center-block" src="img/guide-2.jpg" alt="">
+              <small><a href="guides-overview.php">look inside</a> | <a href="#">download</a></small>
+            </div>
+            <!--guide panel 3-->
+            <div class="col-md-6">
+              <img class="img-responsive center-block" src="img/guide-3.jpg" alt="">
+              <small><a href="guides-overview.php">look inside</a> | <a href="#">download</a></small>
+            </div>
+            <!--guide panel 4-->
+            <div class="col-md-6">
+              <img class="img-responsive center-block" src="img/guide-4.jpg" alt="">
+             <small><a href="guides-overview.php">look inside</a> | <a href="#">download</a></small>
+            </div>
+          </div>
+        </div>
+        <!--/mamas-guides-panel-->
+
+        <!--mamas-blog-panel-->
+        <div class="col-md-6 panel-guide-grp margin-top label-warning pull-right">
+          <div class="row content">
+            <div class="col-md-12">
+              <h4>
+                <span class="pull-left">FROM MAMA'S BLOG</span>
+                <span class="pull-right small"><a href="#">More from Mama <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></span>
+              </h4>
+            </div>
+          </div>
+          <div class="row content">
+            <div class="col-md-5">
+              <img class="img-responsive" src="img/quality.jpg" alt="">
+            </div>
+            <div class="col-md-7">
+              <h3><a href="#">Blog Title</a></h3>
+              <p>Your gut tells you that quality really matters.  Here are some statistics that show why quality also equals safety.</p>
+              <a href="#" class="btn btn-lg btn-responsive btn-danger">read more</a>
+            </div>
+          </div>
+        </div>
+
+        <!--mama-brands-panel-->
+        <div class="col-md-6 panel-guide-grp margin-top label-warning pull-right">
+          <div class="row content">
+            <div class="col-md-12">
+              <h4>
+                <span class="pull-left">BRANDS MAKING A DIFFERENCE</span>
+                <span class="pull-right small"><a href="#">More from Mama<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a></span>
+              </h4>
+            </div>
+          </div>
+          <div class="row content">
+            <div class="col-md-5">
+              <img class="img-responsive" src="img/halo.jpg" alt="">
+            </div>
+            <div class="col-md-7">
+              <h3><a href="#">Brands Title</a></h3>
+              <p>There has not been much innovation in the baby bassonet space for over 30 years, that is, until Halo came along...</p>
+              <a href="#" class="btn btn-lg btn-responsive btn-danger">read more</a>
+            </div>
+          </div>
+        </div>
+        <!--mama-brands-panel-->
+      </div>
+     </section>
+     <!--/content-home-guides -->
+
+  </div>
+  <footer>
+
+  <!--START nav-footer: [menu-products / menu-about-us / footer-highlights]-->
+    <section id="nav-footer" class="container">
+      <div class="row remove-horizontal-spacing">
+        <!--START menu-products-->
+        <div class="col-md-4 pull-left">
+          <h3 class="text-danger heading-underline font-weight-heavy">
+            PRODUCTS &amp; MORE
+          </h3>
+          <ul class="list-unstyled pull-left ">
+            <li><a href="baby-child.php">for my baby</a></li>
+            <li><a href="mom-home.php">for mama</a></li>
+            <li><a href="bundles-deals.php">bundles & deals</a></li>
+            <li><a href="cloth-diapers.php">cloth diapers</a></li>
+            <li><a href="only-organic.php">only organic</a></li>
+          </ul>
+          <ul class="list-unstyled pull-right">
+            <li><a href="new-items.php">what's new</a></li>
+            <li><a href="deal-month.php">deal of the month</a></li>
+            <li><a href="top-sellers.php">top sellers</a></li>
+            <li><a href="browse-brands.php">browse by brand</a></li>
+            <li><a href="refer-friends.php">refer a friend</a></li>
+          </ul>
+        </div>
+        <!--/menu-product-->
+
+        <!--START menu-about-us-->
+        <div class="col-md-2 pull-left">
+          <h3 class="text-danger heading-underline font-weight-heavy">
+            ABOUT US
+          </h3>
+          <ul class="list-unstyled pull-left">
+            <li><a href="mamas-story.php">about us</a></li>
+            <li><a href="our-mission.php">our mission</a></li>
+            <li><a href="giving-back.php">giving back</a></li>
+            <li><a href="mamas-guides.php">mama's free guides</a></li>
+            <li><a href="mamas-blog.php">mama's blog</a></li>
+          </ul>
+        </div>
+        <!--/menu-about-us-->
+
+
+        <!--START footer-highlights -->
+        <div class="col-md-2 footer-highlights hidden-md hidden-sm hidden-xs text-right pull-left">
+          <span class="glyphicon glyphicon-phone text-danger pad-no-right" aria-hidden="true"></span>
+        </div>
+
+        <div class="col-md-4 footer-highlights text-left pull-left">
+          FOR MAMA&#39;S SPECIAL TOUCH,
+          <h2 class="text-danger remove-vertical-spacing">Call: 1-877-979-6262
+          </h2>
+          <ul class="list-unstyled list-inline text-center pad-top">
+            <li><a href="cart.php">MY CART</a> | </li>
+            <li><a href="login-register.php">REGISTER OR LOG IN HERE</a></li>
+          </ul>
+        </div>
+        <!--/footer-highlights -->
+      </div>
+    </section>
+    <!--/nav-footer: [menu-products / menu-about-us / footer-highlights]-->
+
+    <!--START trusted-sources-->
+    <section id="trusted-sources" class="container">
+      <div class="row text-center margin-top pad-top pad-bottom top-bottom-border">
+        <div class="col-md-2 pull-left">
+          <img src="img/diaper_pin.png" alt="">
+        </div>
+        <div class="col-md-3 pull-left">
+          <img src="img/buy_safe.png" alt="">
+        </div>
+        <div class="col-md-2 pull-left">
+          <img src="img/bbb.png" alt="">
+        </div>
+        <div class="col-md-2 pull-left">
+          <img src="img/bizrate.png" alt="">
+        </div>
+        <div class="col-md-3">
+          <img src="img/google_trusted.gif"  alt="">
+        </div>
+       </div>
+    </section>
+    <!--/trusted-sources-->
+
+    <!--START site-summary: [copyright / privacy-policy / terms & conditions / site-map / social-links]-->
+    <section id="site-summary" class="container">
+      <div class="row text-center center-block margin-top">
+        <div class="col-md-2 small pull-left">
+          <p>&copy;2014 THANKS MAMA, LLC</p>
+        </div>
+        <div class="col-md-4 small pull-left">
+          <ul class="list-unstyled list-inline">
+            <li><a href="privacy-policy.php">PRIVACY POLICY</a> | </li>
+            <li><a href="terms-conditions.php">TERMS &amp; CONDITIONS</a>| </li>
+            <li><a href="site-map.php">SITE MAP</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-unstyled list-inline pull-right">
+            <li><a href="#"><img src="img/social_twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social_facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social_imgr.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social_pinterest.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social_google_plus.png" alt=""></a></li>
+            <li><a href="#"><img src="img/social_play.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--/site-summary: [copyright / privacy-policy / terms & conditions / site-map / social-links]-->
+    
+  </footer>
+
+  <!--START scripts -->
+  <!--JavaScript- JQuery core CDN as of 12/3/2014-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <!--JavaScript- Bootstrap core CDN as of 12/3/2014-->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <!--Javascript- Custom for thanksmama.com as of 12/3/2014-->
+  <script src="js/main.js"></script>
+  <!--/scripts-->
+
+</body>
+</html>

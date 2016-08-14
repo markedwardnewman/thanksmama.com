@@ -1,0 +1,46 @@
+Magento URL:
+  site: http://thanksmama.scmreview.com/mama/
+  block descriptions: http://thanksmama.scmreview.com/mama/doc/media/item1.png
+  admin: http://thanksmama.scmreview.com/mama/admin
+    username: admin
+    password: thankyoumama1
+    
+
+
+Javascripts affecting popover:
+	http://thanksmama.scmreview.com/mama/js/scm/main.js
+  
+  modified each NAV-MAIN popup by adding a viewport it is supposed to limit itself to in size:
+    jQuery(".pop-baby-child").popover({
+      trigger: 'manual', html: true, animation:false, container: 'body', placement: 'bottom',   content: nav_main_popover_baby_child_content,
+      viewport:{selector:'.main', padding:0}         
+     });
+     
+     try- <<<viewport: '.main'>>> first
+
+  also, the source bg image is 1200px wide
+  popover is rendering at 1166px wide x 369px tall , not sure if that includes borders
+  slideshow is 1140px wide x 400px tall
+  client wants the popover to match the slideshow in width and slideshow + nav-sub in height
+  
+    
+
+css modifications:
+	.nav-main-popover-baby-child    { background: url(../img/pop-over-baby-child.png); }
+	.nav-main-popover-mom-home      { background: url(../img/pop-over-mom-home.png);}
+	.nav-main-popover-toys-learning { background: url(../img/pop-over-toys-learning.png);}
+	.nav-main-popover-bundles-deals { background: url(../img/pop-over-bundles-deals.png);} <- missing image
+	.nav-main-popover-cloth-diapers { background: url(../img/pop-over-cloth-diapers.png);}
+	.nav-main-popover-only-organic  { background: url(../img/pop-over-only-organic.png);}
+  
+.popoverx {
+  background-repeat: no-repeat !important;
+  background-position: bottom !important;
+  background-origin: padding-box;
+  background-color: #ffffff;
+  padding-top: 2em;
+  padding-right: 1em;
+  padding-bottom: 3.5em;
+  padding-left: 1em;
+}
+
