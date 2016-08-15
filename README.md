@@ -16,7 +16,7 @@
 **Technologies used:**
 
 - HTML5
-- LESS | CSS3
+- LESS - CSS3
 - Bootstrap 3
 - javascript | jQuery library
 - Adobe's Photoshop
