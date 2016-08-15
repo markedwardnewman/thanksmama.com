@@ -1,4 +1,4 @@
-#*[thanksmama.com](http://markedwardnewman.com/thanksmama.com/)*
+#[thanksmama.com](http://markedwardnewman.com/thanksmama.com/)
 
 ##Project Scope - early 2015
 
