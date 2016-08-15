@@ -1,4 +1,8 @@
-#[thanksmama.com](http://markedwardnewman.com/thanksmama.com/)
+#Thanks Mama
+
+###Production / live site [here](https://www.thanksmama.com/)
+###What I coded [here](http://markedwardnewman.com/thanksmama.com/)
+
 
 ##Project Scope - early 2015
 
